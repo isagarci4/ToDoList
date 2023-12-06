@@ -6,6 +6,7 @@ import { Input } from './components/Input'
 import styles from './App.module.css'
 
 import './global.css'
+import { Button } from './components/Button'
 
 function App() {
 
@@ -14,7 +15,10 @@ function App() {
       <Header />
 
       <section className={styles.content}>
-        <Input />
+        <div className={styles.createTask}>
+          <Input />
+          <Button />
+        </div>
       </section>
     </div>
   )
