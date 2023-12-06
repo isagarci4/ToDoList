@@ -1,12 +1,11 @@
-// import styles from './App.css'
-
 import { Header } from './components/Header'
 import { Input } from './components/Input'
+import { Button } from './components/Button'
+import { ListHeader } from './components/ListHeader'
 
 import styles from './App.module.css'
 
 import './global.css'
-import { Button } from './components/Button'
 
 function App() {
 
@@ -18,6 +17,10 @@ function App() {
         <div className={styles.createTask}>
           <Input />
           <Button />
+        </div>
+
+        <div className={styles.taskList}>
+            <ListHeader />          
         </div>
       </section>
     </div>
